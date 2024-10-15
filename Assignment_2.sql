@@ -1,4 +1,4 @@
-1. Create a customer table which comprises of these columns – ‘customer_id’, ‘first_name’, ‘last_name’, ‘email’, ‘address’, ‘city’,’state’,’zip’
+-- 1. Create a customer table which comprises of these columns â€“ â€˜customer_idâ€™, â€˜first_nameâ€™, â€˜last_nameâ€™, â€˜emailâ€™, â€˜addressâ€™, â€˜cityâ€™,â€™stateâ€™,â€™zipâ€™
 
 create table Customer
 		(customer_id int PRIMARY KEY, 
@@ -10,7 +10,7 @@ create table Customer
         state varchar(10), 
 		zip int)
 
-2. Insert 5 new records into the table
+--2. Insert 5 new records into the table
 
 INSERT INTO Customer VALUES (10,'Deeksha','Sharma','deeksha@gmail.com','Neeladari','Electronic City','Bnagalore',848501),
 							(20, 'Vedant','Bharadwaj','vedant123@gmail.com','Carter road','Muradabad','UP', 858402),
@@ -20,12 +20,12 @@ INSERT INTO Customer VALUES (10,'Deeksha','Sharma','deeksha@gmail.com','Neeladar
 select * from Customer
 
 
-3. Select only the ‘first_name’ & ‘last_name’ columns from the customer table
+-- 3. Select only the â€˜first_nameâ€™ & â€˜last_nameâ€™ columns from the customer table
 
 select first_name,last_name
 	from Customer
 
-4. Select those records where ‘first_name’ starts with “G” and city is San Jose
+-- 4. Select those records where â€˜first_nameâ€™ starts with â€œGâ€ and city is San Jose
 
 select * from Customer
 	where first_name like 'G%' and city='San Jose';
